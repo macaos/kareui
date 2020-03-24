@@ -34,10 +34,12 @@ const Tab = (props: any) => {
   //   const tabPanes = props.children[1];
   const tabLinks = React.Children.map(
     props.children[0].props.children,
-    (child, index) =>
-      React.cloneElement(child, {
+    (child, index) => {
+      //   const ur = useRef(null);
+      return React.cloneElement(child, {
         ref: (el: React.MutableRefObject<null>) => (refLinks[index] = el)
-      })
+      });
+    }
   );
   const tabPanes = React.Children.map(
     props.children[1].props.children,
