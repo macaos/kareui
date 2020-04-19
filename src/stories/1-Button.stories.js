@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { action } from "@storybook/addon-actions";
 import { Button } from "@storybook/react/demo";
-import Tab, { TabLink, TabPane } from "../components/Tab";
+import Tab, { TabLink, TabPane } from "../component/Tab";
 import "../scss/Main.scss";
 
 export default {
