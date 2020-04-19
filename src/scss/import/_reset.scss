@@ -216,7 +216,9 @@ table {
 }
 
 td,
-th {
+th,
+ul {
+  margin: 0;
   padding: 0;
 }
 
